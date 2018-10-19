@@ -1,0 +1,145 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#616161"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#FAFAFA"
+
+        android:paddingBottom="5dp"
+
+        >
+
+        <TextView
+            android:id="@+id/bus"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="QUE BUSCA:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/editBusqueda"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+
+            android:layout_marginTop="59dp"
+            android:hint="buscador(Etc) "
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/imgButon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/editBusqueda"
+            android:layout_marginEnd="14dp"
+            android:text="Buscar"></Button>
+
+        <TextView
+            android:id="@+id/textDonde"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/editBusqueda"
+            android:text="DONDE :" />
+
+        <Button
+            android:id="@+id/butCiudad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textDonde"
+            android:layout_marginStart="36dp"
+            android:text="Ciudades" />
+
+        <Button
+            android:id="@+id/cerca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textDonde"
+            android:layout_marginEnd="89dp"
+            android:gravity="center"
+            android:text="Cerca de mi" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#FAFAFA"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:paddingTop="20dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+           android:src="@drawable/ic_account_circle"
+         />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_toEndOf="@+id/profile_image"
+        android:paddingTop="20dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_camera_enhance"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_toEndOf="@+id/profile_image2"
+            android:paddingTop="20dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_restaurant"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_toEndOf="@+id/profile_image3"
+            android:paddingTop="20dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_local_taxi"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"
+            app:menu="@menu/botton" />
+
+    </RelativeLayout>
+
+</LinearLayout>
